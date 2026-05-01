@@ -27,7 +27,7 @@ find /var/log -type f -name "*.log" -mtime +$DAYS -exec rm -f {} \;
 BACKUP_DIR="/backup"
 
 if [ -d "$BACKUP_DIR" ]; then
-    echo "Cleaning backups older than $DAYS days..." >> $LOG_FILE
+    echo "Cleaning old backups older than $DAYS days..." >> $LOG_FILE
     find $BACKUP_DIR -type f -mtime +$DAYS -exec rm -f {} \;
 fi
 
