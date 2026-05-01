@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================
-# CONFIGURATION
+# CONFIGURATIONS
 # ==============================
 LOG_FILE="/tmp/disk_cleanup.log"
 DAYS=7
